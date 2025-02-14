@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <meta name="description" content="Helayna Fuller Photography">
+        <title>Helayna Fuller Photography</title>
+        <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
+        <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/style-portfolio.css">
+    </head>
+    <body>
+        <header>Helayna Fuller Photography</header>
+        <nav>
+            <div>
+                <a href="../index.html">
+                    <button>Home</button>
+                </a>
+                <a href="../pages/portfolio.html">
+                    <button>Portfolio</button>
+                </a>
+                <a href="../pages/contact.html">
+                    <button>Contact</button>
+                </a>
+                <a href="https://www.instagram.com/helaynafullerphotography" target="_blank">
+                    <button>Instagram</button>
+                </a>
+            </div>
+        </nav>
+        <main>
+            <div class="projects">
+                <div class="project-directory">
+                    <div class="container">
+                        <img id="1" src="../images/family-archive/FinalPrint1.jpg" onclick="toggleDialog(id)">
+                        <h1 id="1" onclick="toggleDialog(id)">Family Archive</h1>
+                    </div>
+                    <div class="container">
+                        <img id="2" src="../images/graphic-design-prints/Gd_1.jpg" onclick="toggleDialog(id)">
+                        <h1 id="2" onclick="toggleDialog(id)">Graphic Design Prints</h1>
+                    </div>
+                    <div class="container">
+                        <img id="3" src="../images/landscape/landscape1.jpeg" onclick="toggleDialog(id)">
+                        <h1 id="3" onclick="toggleDialog(id)">Landscape Photography</h1>
+                    </div>
+                    <div class="container">
+                        <img id="4" src="../images/studio-portraiture/studio1.jpg" onclick="toggleDialog(id)">
+                        <h1 id="4" onclick="toggleDialog(id)">Studio Portraiture</h1>
+                    </div>
+                    <div class="container">
+                        <img id="5" src="../images/floral-portraiture/floral1.JPG" onclick="toggleDialog(id)">
+                        <h1 id="5" onclick="toggleDialog(id)">Floral Portraiture</h1>
+                    </div>
+                    <div class="container">
+                        <img id="6" src="../images/animal-photography/Animal1.jpg" onclick="toggleDialog(id)">
+                        <h1 id="6" onclick="toggleDialog(id)">Animal Photography</h1>
+                    </div>
+                    <div class="container">
+                        <img id="7" src="../images/self-portraiture/Final_Print1.jpg" onclick="toggleDialog(id)">
+                        <h1 id="7" onclick="toggleDialog(id)">Self Portraiture</h1>
+                    </div>
+                </div>
+                
+                <dialog id="project-1">
+                    <div class="project1-window">
+                        <header>
+                            <h1>Family Archive</h1>
+                            <button onclick="closeProject1()"> &#x2715 </button>
+                        </header>
+                        <div class = "project-gallery">
+                            <img class="gallery-main1" title="Click to open in new page"  src="../images/family-archive/FinalPrint1.jpg" onclick="window.open(this.src, '_blank');">
+                            <img class="gallery-main1" title="Click to open in new page" style="display:none" src="../images/family-archive/FinalPrint2.jpg"  onclick="window.open(this.src, '_blank');">
+                            <img class="gallery-main1" title="Click to open in new page" style="display:none" src="../images/family-archive/FinalPrint3.jpg" onclick="window.open(this.src, '_blank');">
+                            <img class="gallery-main1" title="Click to open in new page" style="display:none" src="../images/family-archive/FinalPrint4.jpg" onclick="window.open(this.src, '_blank');">
+                            <img class="gallery-main1" title="Click to open in new page" style="display:none" src="../images/family-archive/FinalPrint5.jpg" onclick="window.open(this.src, '_blank');">
+                            <img class="gallery-main1" title="Click to open in new page" style="display:none" src="../images/family-archive/FinalPrint6.jpg" onclick="window.open(this.src, '_blank');">
+                            <img class="gallery-main1" title="Click to open in new page" style="display:none" src="../images/family-archive/FinalPrint7.jpg" onclick="window.open(this.src, '_blank');">
+                            <img class="gallery-main1" title="Click to open in new page" style="display:none" src="../images/family-archive/FinalPrint8.jpg" onclick="window.open(this.src, '_blank');">
+                            <img class="gallery-main1" title="Click to open in new page" style="display:none" src="../images/family-archive/FinalPrint9.jpg" onclick="window.open(this.src, '_blank');">
+                            <img class="gallery-main1" title="Click to open in new page" style="display:none" src="../images/family-archive/FinalPrint10.png" onclick="window.open(this.src, '_blank');">
+
+                            <div class="gallery-window">
+                                <img class="gallery-selectors1" style="opacity:1" src="../images/family-archive/FinalPrint1.jpg" onclick="galleryChoice(1, 1)">
+                                <img class="gallery-selectors1" src="../images/family-archive/FinalPrint2.jpg" onclick="galleryChoice(1, 2)">
+                                <img class="gallery-selectors1" src="../images/family-archive/FinalPrint3.jpg" onclick="galleryChoice(1, 3)">
+                                <img class="gallery-selectors1" src="../images/family-archive/FinalPrint4.jpg" onclick="galleryChoice(1, 4)">
+                                <img class="gallery-selectors1" src="../images/family-archive/FinalPrint5.jpg" onclick="galleryChoice(1, 5)">
+                                <img class="gallery-selectors1" src="../images/family-archive/FinalPrint6.jpg" onclick="galleryChoice(1, 6)">
+                                <img class="gallery-selectors1" src="../images/family-archive/FinalPrint7.jpg" onclick="galleryChoice(1, 7)">
+                                <img class="gallery-selectors1" src="../images/family-archive/FinalPrint8.jpg" onclick="galleryChoice(1, 8)">
+                                <img class="gallery-selectors1" src="../images/family-archive/FinalPrint9.jpg" onclick="galleryChoice(1, 9)">
+                                <img class="gallery-selectors1" src="../images/family-archive/FinalPrint10.png" onclick="galleryChoice(1, 10)">
+                            </div>  
+                        </div>
+                    </div>
+                </dialog>
+
+                <dialog id="project-2">
+                    <div class="project2-window">
+                        <header>
+                            <h1>Graphic Design Prints</h1>
+                            <button onclick="closeProject2()"> &#x2715 </button>
+                        </header>
+                        <div class = "project-gallery">
+                            <img class="gallery-main2" title="Click to open in new page"  src="../images/graphic-design-prints/Gd_1.jpg" onclick="window.open(this.src, '_blank');">
+                            <img class="gallery-main2" title="Click to open in new page" style="display:none" src="../images/graphic-design-prints/Gd_2.jpg" onclick="window.open(this.src, '_blank');">
+                            <img class="gallery-main2" title="Click to open in new page" style="display:none" src="../images/graphic-design-prints/Gd_3.jpg" onclick="window.open(this.src, '_blank');">
+                            <img class="gallery-main2" title="Click to open in new page" style="display:none" src="../images/graphic-design-prints/Gd_4.jpg" onclick="window.open(this.src, '_blank');">
+                            <img class="gallery-main2" title="Click to open in new page" style="display:none" src="../images/graphic-design-prints/Gd_5.jpg" onclick="window.open(this.src, '_blank');">
+                            <img class="gallery-main2" title="Click to open in new page" style="display:none" src="../images/graphic-design-prints/Gd_6.jpg" onclick="window.open(this.src, '_blank');">
+                            <div class="gallery-window">
+                                <img class="gallery-selectors2" style="opacity:1" src="../images/graphic-design-prints/Gd_1.jpg" onclick="galleryChoice(2, 1)">
+                                <img class="gallery-selectors2" style="opacity:1" src="../images/graphic-design-prints/Gd_2.jpg" onclick="galleryChoice(2, 2)">
+                                <img class="gallery-selectors2" style="opacity:1" src="../images/graphic-design-prints/Gd_3.jpg" onclick="galleryChoice(2, 3)">
+                                <img class="gallery-selectors2" style="opacity:1" src="../images/graphic-design-prints/Gd_4.jpg" onclick="galleryChoice(2, 4)">
+                                <img class="gallery-selectors2" style="opacity:1" src="../images/graphic-design-prints/Gd_5.jpg" onclick="galleryChoice(2, 5)">
+                                <img class="gallery-selectors2" style="opacity:1" src="../images/graphic-design-prints/Gd_6.jpg" onclick="galleryChoice(2, 6)">
+                            </div>
+                        </div>
+                    </div>
+                </dialog>
+
+                <dialog id="project-3">
+                    <div class="project3-window">
+                        <header>
+                            <h1>Landscape Photography</h1>
+                            <button onclick="closeProject3()"> &#x2715 </button>
+                        </header>
+                        <div class = "project-gallery">
+                            <img class="gallery-main3" title="Click to open in new page"  src="../images/landscape/landscape1.jpeg" onclick="window.open(this.src, '_blank');">
+                            <img class="gallery-main3" title="Click to open in new page" style="display:none" src="../images/landscape/landscape2.jpg" onclick="window.open(this.src, '_blank');">
+                            <img class="gallery-main3" title="Click to open in new page" style="display:none" src="../images/landscape/landscape3.jpg" onclick="window.open(this.src, '_blank');">
+                            <img class="gallery-main3" title="Click to open in new page" style="display:none" src="../images/landscape/landscape4.jpeg" onclick="window.open(this.src, '_blank');">
+                            <img class="gallery-main3" title="Click to open in new page" style="display:none" src="../images/landscape/landscape5.jpg" onclick="window.open(this.src, '_blank');">
+                            <img class="gallery-main3" title="Click to open in new page" style="display:none" src="../images/landscape/landscape6.jpg" onclick="window.open(this.src, '_blank');">
+                            <img class="gallery-main3" title="Click to open in new page" style="display:none" src="../images/landscape/landscape7.jpg" onclick="window.open(this.src, '_blank');">
+                            <img class="gallery-main3" title="Click to open in new page" style="display:none" src="../images/landscape/landscape8.jpg" onclick="window.open(this.src, '_blank');">
+                            <div class="gallery-window">
+                                <img class="gallery-selectors3" style="opacity:1" src="../images/landscape/landscape1.jpeg" onclick="galleryChoice(3, 1)">
+                                <img class="gallery-selectors3" style="opacity:1" src="../images/landscape/landscape2.jpg" onclick="galleryChoice(3, 2)">
+                                <img class="gallery-selectors3" style="opacity:1" src="../images/landscape/landscape3.jpg" onclick="galleryChoice(3, 3)">
+                                <img class="gallery-selectors3" style="opacity:1" src="../images/landscape/landscape4.jpeg" onclick="galleryChoice(3, 4)">
+                                <img class="gallery-selectors3" style="opacity:1" src="../images/landscape/landscape5.jpg" onclick="galleryChoice(3, 5)">
+                                <img class="gallery-selectors3" style="opacity:1" src="../images/landscape/landscape6.jpg" onclick="galleryChoice(3, 6)">
+                                <img class="gallery-selectors3" style="opacity:1" src="../images/landscape/landscape7.jpg" onclick="galleryChoice(3, 7)">
+                                <img class="gallery-selectors3" style="opacity:1" src="../images/landscape/landscape8.jpg" onclick="galleryChoice(3, 8)">
+                            </div>
+                        </div>
+                    </div>
+                </dialog>
+
+                <dialog id="project-4">
+                    <div class="project4-window">
+                        <header>
+                            <h1>Studio Portraiture</h1>
+                            <button onclick="closeProject4()"> &#x2715 </button>
+                        </header>
+                        <div class = "project-gallery">
+                            <img class="gallery-main4" title="Click to open in new page"  src="../images/studio-portraiture/studio1.jpg" onclick="window.open(this.src, '_blank');">
+                            <img class="gallery-main4" title="Click to open in new page" style="display:none" src="../images/studio-portraiture/studio2.jpg" onclick="window.open(this.src, '_blank');">
+                            <img class="gallery-main4" title="Click to open in new page" style="display:none" src="../images/studio-portraiture/studio3.jpg" onclick="window.open(this.src, '_blank');">
+                            <img class="gallery-main4" title="Click to open in new page" style="display:none" src="../images/studio-portraiture/studio4.jpg" onclick="window.open(this.src, '_blank');">
+                            <img class="gallery-main4" title="Click to open in new page" style="display:none" src="../images/studio-portraiture/studio5.jpg" onclick="window.open(this.src, '_blank');">
+                            <img class="gallery-main4" title="Click to open in new page" style="display:none" src="../images/studio-portraiture/studio6.jpg" onclick="window.open(this.src, '_blank');">
+                            <img class="gallery-main4" title="Click to open in new page" style="display:none" src="../images/studio-portraiture/studio7.jpg" onclick="window.open(this.src, '_blank');">
+                            <img class="gallery-main4" title="Click to open in new page" style="display:none" src="../images/studio-portraiture/studio8.jpg" onclick="window.open(this.src, '_blank');">
+                            <img class="gallery-main4" title="Click to open in new page" style="display:none" src="../images/studio-portraiture/studio9.jpg" onclick="window.open(this.src, '_blank');">
+                            <img class="gallery-main4" title="Click to open in new page" style="display:none" src="../images/studio-portraiture/studio10.jpg" onclick="window.open(this.src, '_blank');">
+                            <img class="gallery-main4" title="Click to open in new page" style="display:none" src="../images/studio-portraiture/studio11.jpg" onclick="window.open(this.src, '_blank');">
+                            <img class="gallery-main4" title="Click to open in new page" style="display:none" src="../images/studio-portraiture/studioCreative1.jpg" onclick="window.open(this.src, '_blank');">
+                            <img class="gallery-main4" title="Click to open in new page" style="display:none" src="../images/studio-portraiture/studioCreative2.jpg" onclick="window.open(this.src, '_blank');">
+                            <img class="gallery-main4" title="Click to open in new page" style="display:none" src="../images/studio-portraiture/studioCreative3.jpg" onclick="window.open(this.src, '_blank');">
+                            <img class="gallery-main4" title="Click to open in new page" style="display:none" src="../images/studio-portraiture/studioCreative4.jpg" onclick="window.open(this.src, '_blank');">
+                            <img class="gallery-main4" title="Click to open in new page" style="display:none" src="../images/studio-portraiture/studioCreative5.jpg" onclick="window.open(this.src, '_blank');">
+                            <img class="gallery-main4" title="Click to open in new page" style="display:none" src="../images/studio-portraiture/studioCreative6.jpg" onclick="window.open(this.src, '_blank');">
+                            <img class="gallery-main4" title="Click to open in new page" style="display:none" src="../images/studio-portraiture/studioCreative7.jpg" onclick="window.open(this.src, '_blank');">
+                            
+                            <div class="gallery-window">
+                                <img class="gallery-selectors4" style="opacity:1" src="../images/studio-portraiture/studio1.jpg" onclick="galleryChoice(4, 1)">
+                                <img class="gallery-selectors4" style="opacity:1" src="../images/studio-portraiture/studio2.jpg" onclick="galleryChoice(4, 2)">
+                                <img class="gallery-selectors4" style="opacity:1" src="../images/studio-portraiture/studio3.jpg" onclick="galleryChoice(4, 3)">
+                                <img class="gallery-selectors4" style="opacity:1" src="../images/studio-portraiture/studio4.jpg" onclick="galleryChoice(4, 4)">
+                                <img class="gallery-selectors4" style="opacity:1" src="../images/studio-portraiture/studio5.jpg" onclick="galleryChoice(4, 5)">
+                                <img class="gallery-selectors4" style="opacity:1" src="../images/studio-portraiture/studio6.jpg" onclick="galleryChoice(4, 6)">
+                                <img class="gallery-selectors4" style="opacity:1" src="../images/studio-portraiture/studio7.jpg" onclick="galleryChoice(4, 7)">
+                                <img class="gallery-selectors4" style="opacity:1" src="../images/studio-portraiture/studio8.jpg" onclick="galleryChoice(4, 8)">
+                                <img class="gallery-selectors4" style="opacity:1" src="../images/studio-portraiture/studio9.jpg" onclick="galleryChoice(4, 9)">
+                                <img class="gallery-selectors4" style="opacity:1" src="../images/studio-portraiture/studio10.jpg" onclick="galleryChoice(4, 10)">
+                                <img class="gallery-selectors4" style="opacity:1" src="../images/studio-portraiture/studio11.jpg" onclick="galleryChoice(4, 11)">
+                                <img class="gallery-selectors4" style="opacity:1" src="../images/studio-portraiture/studioCreative1.jpg" onclick="galleryChoice(4, 12)">
+                                <img class="gallery-selectors4" style="opacity:1" src="../images/studio-portraiture/studioCreative2.jpg" onclick="galleryChoice(4, 13)">
+                                <img class="gallery-selectors4" style="opacity:1" src="../images/studio-portraiture/studioCreative3.jpg" onclick="galleryChoice(4, 14)">
+                                <img class="gallery-selectors4" style="opacity:1" src="../images/studio-portraiture/studioCreative4.jpg" onclick="galleryChoice(4, 15)">
+                                <img class="gallery-selectors4" style="opacity:1" src="../images/studio-portraiture/studioCreative5.jpg" onclick="galleryChoice(4, 16)">
+                                <img class="gallery-selectors4" style="opacity:1" src="../images/studio-portraiture/studioCreative6.jpg" onclick="galleryChoice(4, 17)">
+                                <img class="gallery-selectors4" style="opacity:1" src="../images/studio-portraiture/studioCreative7.jpg" onclick="galleryChoice(4, 18)">
+                            </div>
+                        </div>
+                    </div>
+                </dialog>
+
+                <dialog id="project-5">
+                    <div class="project5-window">
+                        <header>
+                            <h1>Floral Portraiture</h1>
+                            <button onclick="closeProject5()"> &#x2715 </button>
+                        </header>
+                        <div class = "project-gallery">
+                            <img class="gallery-main5" title="Click to open in new page"  src="../images/floral-portraiture/floral1.JPG" onclick="window.open(this.src, '_blank');">
+                            <img class="gallery-main5" title="Click to open in new page" style="display:none" src="../images/floral-portraiture/floral2.JPG" onclick="window.open(this.src, '_blank');">
+                            <img class="gallery-main5" title="Click to open in new page" style="display:none" src="../images/floral-portraiture/floral3.JPG" onclick="window.open(this.src, '_blank');">
+                            <img class="gallery-main5" title="Click to open in new page" style="display:none" src="../images/floral-portraiture/floral4.JPG" onclick="window.open(this.src, '_blank');">
+                            <img class="gallery-main5" title="Click to open in new page" style="display:none" src="../images/floral-portraiture/floral5.JPG" onclick="window.open(this.src, '_blank');">
+                            <img class="gallery-main5" title="Click to open in new page" style="display:none" src="../images/floral-portraiture/floral6.JPG" onclick="window.open(this.src, '_blank');">
+                            <img class="gallery-main5" title="Click to open in new page" style="display:none" src="../images/floral-portraiture/floral7.JPG" onclick="window.open(this.src, '_blank');">
+                            <img class="gallery-main5" title="Click to open in new page" style="display:none" src="../images/floral-portraiture/floral8.jpg" onclick="window.open(this.src, '_blank');">
+                            <img class="gallery-main5" title="Click to open in new page" style="display:none" src="../images/floral-portraiture/floral9.jpg" onclick="window.open(this.src, '_blank');">
+                            <div class="gallery-window">
+                                <img class="gallery-selectors5" style="opacity:1" src="../images/floral-portraiture/floral1.JPG" onclick="galleryChoice(5, 1)">
+                                <img class="gallery-selectors5" style="opacity:1" src="../images/floral-portraiture/floral2.JPG" onclick="galleryChoice(5, 2)">
+                                <img class="gallery-selectors5" style="opacity:1" src="../images/floral-portraiture/floral3.JPG" onclick="galleryChoice(5, 3)">
+                                <img class="gallery-selectors5" style="opacity:1" src="../images/floral-portraiture/floral4.JPG" onclick="galleryChoice(5, 4)">
+                                <img class="gallery-selectors5" style="opacity:1" src="../images/floral-portraiture/floral5.JPG" onclick="galleryChoice(5, 5)">
+                                <img class="gallery-selectors5" style="opacity:1" src="../images/floral-portraiture/floral6.JPG" onclick="galleryChoice(5, 6)">
+                                <img class="gallery-selectors5" style="opacity:1" src="../images/floral-portraiture/floral7.JPG" onclick="galleryChoice(5, 7)">
+                                <img class="gallery-selectors5" style="opacity:1" src="../images/floral-portraiture/floral8.jpg" onclick="galleryChoice(5, 8)">
+                                <img class="gallery-selectors5" style="opacity:1" src="../images/floral-portraiture/floral9.jpg" onclick="galleryChoice(5, 9)">
+                            </div>
+                        </div>
+                    </div>
+                </dialog>
+
+                <dialog id="project-6">
+                    <div class="project-window">
+                        <header>
+                            <h1>Animal Photography</h1>
+                            <button onclick="closeProject6()"> &#x2715 </button>
+                        </header>
+                        <div class = "project-gallery">
+                            <img class="gallery-main6" title="Click to open in new page"  src="../images/animal-photography/Animal1.jpg" onclick="window.open(this.src, '_blank');">
+                            <img class="gallery-main6" title="Click to open in new page" style="display:none" src="../images/animal-photography/Animal2.jpg" onclick="window.open(this.src, '_blank');">
+                            <img class="gallery-main6" title="Click to open in new page" style="display:none" src="../images/animal-photography/Animal3.jpg" onclick="window.open(this.src, '_blank');">
+                            <img class="gallery-main6" title="Click to open in new page" style="display:none" src="../images/animal-photography/Animal4.jpg" onclick="window.open(this.src, '_blank');">
+                            <img class="gallery-main6" title="Click to open in new page" style="display:none" src="../images/animal-photography/Animal5.jpg" onclick="window.open(this.src, '_blank');">
+                            <img class="gallery-main6" title="Click to open in new page" style="display:none" src="../images/animal-photography/Animal6.jpg" onclick="window.open(this.src, '_blank');">
+                            <img class="gallery-main6" title="Click to open in new page" style="display:none" src="../images/animal-photography/Animal7.jpg" onclick="window.open(this.src, '_blank');">
+                            <img class="gallery-main6" title="Click to open in new page" style="display:none" src="../images/animal-photography/Animal8.jpg" onclick="window.open(this.src, '_blank');">
+                            <img class="gallery-main6" title="Click to open in new page" style="display:none" src="../images/animal-photography/Animal9.jpg" onclick="window.open(this.src, '_blank');">
+                            <img class="gallery-main6" title="Click to open in new page" style="display:none" src="../images/animal-photography/Animal10.jpg" onclick="window.open(this.src, '_blank');">
+                            <img class="gallery-main6" title="Click to open in new page" style="display:none" src="../images/animal-photography/Animal11.jpg" onclick="window.open(this.src, '_blank');">
+                            <div class="gallery-window">
+                                <img class="gallery-selectors6" style="opacity:1" src="../images/animal-photography/Animal1.jpg" onclick="galleryChoice(6, 1)">
+                                <img class="gallery-selectors6" style="opacity:1" src="../images/animal-photography/Animal2.jpg" onclick="galleryChoice(6, 2)">
+                                <img class="gallery-selectors6" style="opacity:1" src="../images/animal-photography/Animal3.jpg" onclick="galleryChoice(6, 3)">
+                                <img class="gallery-selectors6" style="opacity:1" src="../images/animal-photography/Animal4.jpg" onclick="galleryChoice(6, 4)">
+                                <img class="gallery-selectors6" style="opacity:1" src="../images/animal-photography/Animal5.jpg" onclick="galleryChoice(6, 5)">
+                                <img class="gallery-selectors6" style="opacity:1" src="../images/animal-photography/Animal6.jpg" onclick="galleryChoice(6, 6)">
+                                <img class="gallery-selectors6" style="opacity:1" src="../images/animal-photography/Animal7.jpg" onclick="galleryChoice(6, 7)">
+                                <img class="gallery-selectors6" style="opacity:1" src="../images/animal-photography/Animal8.jpg" onclick="galleryChoice(6, 8)">
+                                <img class="gallery-selectors6" style="opacity:1" src="../images/animal-photography/Animal9.jpg" onclick="galleryChoice(6, 9)">
+                                <img class="gallery-selectors6" style="opacity:1" src="../images/animal-photography/Animal10.jpg" onclick="galleryChoice(6, 10)">
+                                <img class="gallery-selectors6" style="opacity:1" src="../images/animal-photography/Animal11.jpg" onclick="galleryChoice(6, 11)">
+                            </div>
+                        </div>
+                    </div>
+                </dialog>
+
+                <dialog id="project-7">
+                    <div class="project-window">
+                        <header>
+                            <h1>Self Portraiture</h1>
+                            <button onclick="closeProject7()"> &#x2715 </button>
+                        </header>
+                        <div class = "project-gallery">
+                            <img class="gallery-main7" title="Click to open in new page"  src="../images/self-portraiture/Final_Print1.jpg" onclick="window.open(this.src, '_blank');">
+                            <img class="gallery-main7" title="Click to open in new page" style="display:none" src="../images/self-portraiture/Final_Print2.jpg" onclick="window.open(this.src, '_blank');">
+                            <img class="gallery-main7" title="Click to open in new page" style="display:none" src="../images/self-portraiture/Final_Print3.jpg" onclick="window.open(this.src, '_blank');">
+                            <img class="gallery-main7" title="Click to open in new page" style="display:none" src="../images/self-portraiture/Final_Print4.jpg" onclick="window.open(this.src, '_blank');">
+                            <img class="gallery-main7" title="Click to open in new page" style="display:none" src="../images/self-portraiture/Final_Print5.jpg" onclick="window.open(this.src, '_blank');">
+                            <img class="gallery-main7" title="Click to open in new page" style="display:none" src="../images/self-portraiture/Final_Print6.jpg" onclick="window.open(this.src, '_blank');">
+                            <img class="gallery-main7" title="Click to open in new page" style="display:none" src="../images/self-portraiture/Final_Print7.jpg" onclick="window.open(this.src, '_blank');">
+                            <img class="gallery-main7" title="Click to open in new page" style="display:none" src="../images/self-portraiture/Final_Print8.jpg" onclick="window.open(this.src, '_blank');">
+                            <img class="gallery-main7" title="Click to open in new page" style="display:none" src="../images/self-portraiture/Final_Print9.jpg" onclick="window.open(this.src, '_blank');">
+                            <img class="gallery-main7" title="Click to open in new page" style="display:none" src="../images/self-portraiture/Final_Print10.jpg" onclick="window.open(this.src, '_blank');">
+                            <div class="gallery-window">
+                                <img class="gallery-selectors7" style="opacity:1" src="../images/self-portraiture/Final_Print1.jpg" onclick="galleryChoice(7, 1)">
+                                <img class="gallery-selectors7" style="opacity:1" src="../images/self-portraiture/Final_Print2.jpg" onclick="galleryChoice(7, 2)">
+                                <img class="gallery-selectors7" style="opacity:1" src="../images/self-portraiture/Final_Print3.jpg" onclick="galleryChoice(7, 3)">
+                                <img class="gallery-selectors7" style="opacity:1" src="../images/self-portraiture/Final_Print4.jpg" onclick="galleryChoice(7, 4)">
+                                <img class="gallery-selectors7" style="opacity:1" src="../images/self-portraiture/Final_Print5.jpg" onclick="galleryChoice(7, 5)">
+                                <img class="gallery-selectors7" style="opacity:1" src="../images/self-portraiture/Final_Print6.jpg" onclick="galleryChoice(7, 6)">
+                                <img class="gallery-selectors7" style="opacity:1" src="../images/self-portraiture/Final_Print7.jpg" onclick="galleryChoice(7, 7)">
+                                <img class="gallery-selectors7" style="opacity:1" src="../images/self-portraiture/Final_Print8.jpg" onclick="galleryChoice(7, 8)">
+                                <img class="gallery-selectors7" style="opacity:1" src="../images/self-portraiture/Final_Print9.jpg" onclick="galleryChoice(7, 9)">
+                                <img class="gallery-selectors7" style="opacity:1" src="../images/self-portraiture/Final_Print10.jpg" onclick="galleryChoice(7, 10)">
+                            </div>
+                        </div>
+                    </div>
+                </dialog>
+
+            </div>
+        </main>
+    </body>
+    <script>
+        const project1 = document.getElementById("project-1");
+        const project1_window = document.querySelector(".project1-window");
+        const closeProject1 = () => project1.close();
+        project1.addEventListener("click", (e) => !project1_window.contains(e.target) && project1.close());
+
+        const project2 = document.getElementById("project-2");
+        const closeProject2 = () => project2.close();
+        const project2_window = document.querySelector(".project2-window");
+        project2.addEventListener("click", (e) => !project2_window.contains(e.target) && project2.close());
+
+        const project3 = document.getElementById("project-3");
+        const closeProject3 = () => project3.close();
+        const project3_window = document.querySelector(".project3-window");
+        project3.addEventListener("click", (e) => !project3_window.contains(e.target) && project3.close());
+
+        const project4 = document.getElementById("project-4");
+        const closeProject4 = () => project4.close();
+        const project4_window = document.querySelector(".project4-window");
+        project4.addEventListener("click", (e) => !project4_window.contains(e.target) && project4.close());
+
+        const project5 = document.getElementById("project-5");
+        const closeProject5 = () => project5.close();
+        const project5_window = document.querySelector(".project5-window");
+        project5.addEventListener("click", (e) => !project5_window.contains(e.target) && project5.close());
+
+        const project6 = document.getElementById("project-6");
+        const closeProject6 = () => project6.close();
+        const project6_window = document.querySelector(".project6-window");
+        project6.addEventListener("click", (e) => !project6_window.contains(e.target) && project6.close());
+
+        const project7 = document.getElementById("project-7");
+        const closeProject7 = () => project7.close();
+        const project7_window = document.querySelector(".project7-window");
+        project6.addEventListener("click", (e) => !project7_window.contains(e.target) && project7.close());
+
+        function toggleDialog(id) {
+
+            switch(id) {
+                case("1"):
+                    project1.showModal();
+                    break;
+                case("2"):
+                    project2.showModal();
+                    break;
+                case("3"):
+                    project3.showModal();
+                    break;
+                case("4"):
+                    project4.showModal();
+                    break;
+                case("5"):
+                    project5.showModal();
+                    break;
+                case("6"):
+                    project6.showModal();
+                    break;
+                case("7"):
+                    project7.showModal();
+                    break;
+            }
+        }
+
+        function galleryChoice(galleryNum, slideIndex) {
+            var n = slideIndex;
+            var i;
+            var x = document.getElementsByClassName(`gallery-main${galleryNum}`);
+            var dots = document.getElementsByClassName(`gallery-selectors${galleryNum}`);
+            if (n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].style.opacity = "0.6";
+            }
+            x[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].style.opacity = "1";
+        }
+
+    </script>
+</html>

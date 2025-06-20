@@ -10,23 +10,29 @@
         <link rel="stylesheet" href="./styles/style-index.css">
     </head>
     <body>
-        <header>Helayna Fuller Photography</header>
-        <nav>
+        <nav class="lg">
+            <h1>Helayna Fuller Photography</h1>
             <div>
-                <a href="../index.html">
-                    <button>Home</button>
-                </a>
-                <a href="../pages/portfolio.html">
-                    <button>Portfolio</button>
-                </a>
-                <a href="../pages/contact.html">
-                <button>Contact</button>
-                </a>
+                <a href="../index.html">Home</a>
+                <a href="../pages/portfolio.html">Portfolio</a>
+                <a href="../pages/contact.html">Contact</a>
                 <a href="https://www.instagram.com/helaynafullerphotography" target="_blank">
-                    <button>Instagram</button>
+                    Instagram
                 </a>
             </div>
         </nav>
+        <nav class="sm">
+            <h1>Helayna Fuller Photography</h1>
+            <img id="hamburger-icon" src="../images/hamburger-icon.png"/>
+        </nav>
+        <div id="dropdown" class="sm-dropdown">
+            <a href="../index.html">Home</a>
+            <a href="../pages/portfolio.html">Portfolio</a>
+            <a href="../pages/contact.html">Contact</a>
+            <a href="https://www.instagram.com/helaynafullerphotography" target="_blank">
+                Instagram
+            </a>
+        </div>
         <main>
             <div class="container">
                 <div class="main-info">
@@ -50,6 +56,9 @@
                 </div>
             </div>
         </main>
-        <footer></footer>
+        <footer>
+            <p>website created by <a target="_blank" href="">Donovan Heynen</a></p>
+        </footer>
     </body>
+    <script src="../scripts/navDropdown.js"></script>
 </html>

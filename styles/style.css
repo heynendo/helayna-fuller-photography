@@ -7,25 +7,64 @@
     color: white;
     scrollbar-color: rgb(80, 80, 80) black;
 }
-header {
-    background-image: linear-gradient(rgb(25,25,25),rgb(15,15,15),black,black );
+html > body{
+    background-image: url("../images/background-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100px;
+}
+nav > h1 {
     text-align: left;
-    font-size: 30px;
+    font-size: 2em;
     font-weight: bold;
     font-style: italic;
-    padding: 5dvh;
-    padding-left: 8%;
-    padding-bottom: 80px;
+    padding: 10px;
+    padding-left: 7.5vw;
     cursor: default;
     transition: 0.5s;
 }
-main {
-    background-image: linear-gradient(black,rgb(15,15,15),
-    rgb(25,25,25));
+nav.lg > div{
+    display: flex;
+
+}
+nav.lg div > a {
+    width: 125px;
+    height: 50px;
+    text-align: center;
+    align-content: center;
+    text-decoration: none;
+    opacity: .5;
+    transition: .2s ease;
+}
+nav.lg div > a:hover{
+    opacity: 1;
+    font-size: 1.2em;
 }
 footer {
     height: 150px;
-    background-image: linear-gradient(rgb(25,25,25),rgb(15,15,15));
+    background: #FFFFFF00;
+}
+footer p{
+    color: rgba(255, 255, 255, .50);
+    margin-top: 100px;
+    padding: 0;
+    text-align: center;
+    width: 100vw;
+    font-size: 1em;
+}
+footer p > a{
+    text-decoration: none;
+    opacity: .6;
+    transition: 0.2s;
+}
+footer p > a:hover{
+    opacity: 1;
 }
 h1 {
     padding: 15px;
@@ -39,42 +78,16 @@ p {
     font-size: 18px;
     transition: 0.5s;
 }
-nav {
-    background-color: black;
-    font-size: 20px;
-    transition: 0.5s;
-}
-nav div {
-    list-style-type: none;
-    overflow: hidden;
-}
-nav button {
-    background-color: black;
-    border: none;
-    font-size: 20px;
-    float: left;
-    opacity: 60%;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 5%;
-    padding-right: 5%;
-}
-nav a button:hover {
-    background-color: rgb(20,20,20);
-    opacity: 100%;
-    cursor: pointer;
-    transition: 0.25s;
-}
-nav a button {
-    display: block;
-    text-align: center;
-    text-decoration: none;
-}
-img{
+main img{
     border: solid white 1px;
     border-radius: 5px;
 }
-
+nav.sm{
+    display: none;
+}
+.sm-dropdown{
+    display: none;
+}
 /* xl desktop */
 @media (max-width: 1400px){
     h1 {
@@ -94,10 +107,54 @@ img{
     }
 }
 /* laptop/small screen view */
-@media (max-width: 1020px){
+@media (max-width: 1000px){
     h1 {
         font-size: 25px;
     }
+    nav.sm{
+        display: flex;
+    }
+    nav.lg{
+        display: none;
+    }
+    nav > h1{
+        font-size: 1.25em;
+        padding-left: 5vw;
+    }
+    nav.sm > img{
+        border: none;
+        aspect-ratio: 1/1;
+        height: 30px;
+        margin-right: 5vw;
+        cursor: pointer;
+    }   
+    .sm-dropdown{
+        opacity: 0;
+        font-size: 0;
+        width: 0;
+        display: flex;
+    }
+    .sm-dropdown.show{
+        opacity: 1;
+        width: 100%;
+        font-size: 0.9em;
+        justify-content: space-around;
+    }
+    .sm-dropdown > a{
+        width: 75px;
+        height: 20px;
+        font-size: 0.9em;
+        text-align: center;
+        align-content: center;
+        text-decoration: none;
+        opacity: .5;
+        transition: .2s ease;
+    }
+    .sm-dropdown > a:hover{
+        opacity: 1;
+        font-size: 1em;   
+    }  
+    
 }
 /* tablet view*/
 @media (max-width: 760px){
@@ -108,14 +165,11 @@ img{
     p{
         font-size: 12px;
     }
-    nav button{
-        font-size: 14px;
-    }
     header{
         font-size: 25px;
     }
-    footer{
-        height: 200px;
+    footer p{
+        font-size: 0.8em;
     }
 }
 /* mobile view*/
@@ -128,19 +182,9 @@ img{
         padding: 10px;
         font-size: 9px;
     }
-    nav button {
-        font-size: 12px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        padding-left: 5%;
-        padding-right: 5%;
-    }
     header{
         font-size: 20px;
         padding: 20px;
         padding-left: 8%;
-    }
-    footer{
-        height: 100px;
     }
 }

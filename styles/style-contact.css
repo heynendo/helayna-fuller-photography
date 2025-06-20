@@ -1,4 +1,4 @@
-h1 {
+.info h1 {
     font-size: 25px;
     margin-bottom: 40px;
     text-align: center;
@@ -132,10 +132,6 @@ form button:focus{
 form button:hover{
     cursor: pointer;
     background-color: rgb(95, 95, 95);
-}
-footer {
-    height: 150px;
-    background-image: linear-gradient(rgb(25,25,25),rgb(15,15,15));
 }
 /* tablet view*/
 @media (max-width: 760px){

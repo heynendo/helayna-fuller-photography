@@ -12,7 +12,7 @@ import { useRef } from "react"
 
 
 function PageWrapper({ children }) {
-  const firstRender = useRef(true)
+  const firstRender = useRef(false)
 
   const pageVariants = {
     initial: { opacity: 0, y: 20 }, // Start faded & slightly down
@@ -21,7 +21,7 @@ function PageWrapper({ children }) {
   }
 
   const pageTransition = {
-    delay: firstRender.current ? 1.75 : 0,
+    delay: firstRender.current ? 0.5 : 0,
     duration: 0.5,
     ease: "easeInOut",
   }
@@ -50,7 +50,7 @@ function AppRoutes() {
   return (
     <>
       {isPortfolio ? '' : <Header />}
-      <AnimatePresence mode="wait">
+      <AnimatePresence mode="sync" initial={false}>
         <Routes location={location} key={location.pathname}>
           <Route index element={<PageWrapper><Home /></PageWrapper>} />
           <Route path='/about' element={<PageWrapper><About /></PageWrapper>} />

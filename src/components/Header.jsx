@@ -11,7 +11,7 @@ function Header(){
                 className="top"
                 initial={{ opacity: 0, y: -50 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.5, duration: 1 }}
+                transition={{ duration: 1 }}
             >
                 <Link to='/'><h1>Helayna Fuller Photography</h1></Link>
                     <a

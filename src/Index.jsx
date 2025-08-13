@@ -12,21 +12,30 @@ import { useRef } from "react"
 
 
 function PageWrapper({ children }) {
-  const firstRender = useRef(false)
 
   const pageVariants = {
-    initial: { opacity: 0, y: 20 }, // Start faded & slightly down
-    animate: { opacity: 1, y: 0 },  // Slide up & fade in
-    exit: { opacity: 0, y: -20 },   // Slide up & fade out
+    initial: { opacity: 0, y: 20 },
+    animate: { 
+      opacity: 1, 
+      y: 0, 
+      transition: { 
+        delay: 0.5, 
+        duration: 0.5, 
+        ease: "easeInOut" 
+      } 
+    },
+    exit: { 
+      opacity: 0, 
+      y: -20,   
+      transition: { duration: 0.5, ease: "easeInOut" }
+    },
   }
 
   const pageTransition = {
-    delay: firstRender.current ? 0.5 : 0,
+    delay: 0.25,
     duration: 0.5,
     ease: "easeInOut",
   }
-
-  firstRender.current = false
 
   return (
     <motion.div

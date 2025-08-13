@@ -1,0 +1,71 @@
+.cards .category-open{
+    width: 100%;
+    height: 100%;
+}
+.category-open > .body{
+    width: 90vw;
+    max-width: 1100px;
+    justify-self: center;
+    justify-content: center;
+    margin: auto;
+}
+.category-open .body > .main-img{
+    display: block;
+    height: 50vh;
+    max-width: 90vw;
+    justify-self: center;
+    border-radius: 10px;
+    border: solid white 1px;
+    margin: 25px auto;
+}
+.category-open .body > .img-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    margin: 25px auto;
+}
+.category-open .body .img-gallery > img{
+    width: 150px;
+    margin: 10px;
+    aspect-ratio: 3/2;
+    border-radius: 10px;
+    border: solid white 1px;
+    cursor: pointer;
+    opacity: .75;
+    transition: 0.2s;
+}
+.category-open .body .img-gallery > img:hover{
+    opacity: 1;
+}
+@media (max-width: 650px){
+    .category-open .body > .main-img{
+        height: 35vh;
+        max-width: 85vw;
+    }
+    .category-open .body .img-gallery > img{
+        width: 100px;
+        margin: 5px;
+    }
+    .portfolio .category-open .head > button{
+        width: 115px;
+        font-size: 1em;
+        margin-right: 25px;
+    }
+    .portfolio .category-open .head button > img{
+        height: 35px;
+        aspect-ratio: 1;
+    }    
+    .portfolio .category-open .head button > h3{
+        font-size: 1.1em;
+    }
+    .portfolio .category-open .head button:hover > h3{
+        font-size: 1.2em;
+    }
+    .portfolio .category-open .head div > h2{
+        font-size: 1.35em;
+    }
+    .portfolio .category-open .head div > p{
+        font-size: 0.7em;
+    }
+}

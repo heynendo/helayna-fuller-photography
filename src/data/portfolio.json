@@ -1,0 +1,123 @@
+[
+  {
+    "title": "Family Archive",
+    "tileImage": "/images/portfolio/family-archive/FinalPrint1.jpg",
+    "info": "Senior Thesis Project for Grand Valley State University digitally collaged from Adobe Photoshop",
+    "images": [
+      "/images/portfolio/family-archive/FinalPrint1.jpg",
+      "/images/portfolio/family-archive/FinalPrint2.jpg",
+      "/images/portfolio/family-archive/FinalPrint3.jpg",
+      "/images/portfolio/family-archive/FinalPrint4.jpg",
+      "/images/portfolio/family-archive/FinalPrint5.jpg",
+      "/images/portfolio/family-archive/FinalPrint6.jpg",
+      "/images/portfolio/family-archive/FinalPrint7.jpg",
+      "/images/portfolio/family-archive/FinalPrint8.jpg",
+      "/images/portfolio/family-archive/FinalPrint9.jpg",
+      "/images/portfolio/family-archive/FinalPrint10.png"
+    ]
+  },
+  {
+    "title": "Graphic Design Prints",
+    "tileImage": "/images/portfolio/graphic-design-prints/Gd_1.jpg",
+    "info": "Digitally manipulated prints of historic photographs, collaged with text and imagery representing the impact of the figure",
+    "images": [
+      "/images/portfolio/graphic-design-prints/Gd_1.jpg",
+      "/images/portfolio/graphic-design-prints/Gd_2.jpg",
+      "/images/portfolio/graphic-design-prints/Gd_3.jpg",
+      "/images/portfolio/graphic-design-prints/Gd_4.jpg",
+      "/images/portfolio/graphic-design-prints/Gd_5.jpg",
+      "/images/portfolio/graphic-design-prints/Gd_6.jpg"
+    ]
+  },
+  {
+    "title": "Landscape Photography",
+    "tileImage": "/images/portfolio/landscape/landscape1.jpeg",
+    "info": "Photographs taken from travels around the world",
+    "images": [
+      "/images/portfolio/landscape/landscape1.jpeg",
+      "/images/portfolio/landscape/landscape2.jpg",
+      "/images/portfolio/landscape/landscape3.jpg",
+      "/images/portfolio/landscape/landscape4.jpeg",
+      "/images/portfolio/landscape/landscape5.jpg",
+      "/images/portfolio/landscape/landscape6.jpg",
+      "/images/portfolio/landscape/landscape7.jpg",
+      "/images/portfolio/landscape/landscape8.jpg"
+    ]
+  },
+  {
+    "title": "Studio Portraiture",
+    "tileImage": "/images/portfolio/studio-portraiture/studio1.jpg",
+    "info": "A series of portraits focusing on how light can be manipulated in various contexts",
+    "images": [
+      "/images/portfolio/studio-portraiture/studio1.jpg",
+      "/images/portfolio/studio-portraiture/studio2.jpg",
+      "/images/portfolio/studio-portraiture/studio3.jpg",
+      "/images/portfolio/studio-portraiture/studio4.jpg",
+      "/images/portfolio/studio-portraiture/studio5.jpg",
+      "/images/portfolio/studio-portraiture/studio6.jpg",
+      "/images/portfolio/studio-portraiture/studio7.jpg",
+      "/images/portfolio/studio-portraiture/studio8.jpg",
+      "/images/portfolio/studio-portraiture/studio9.jpg",
+      "/images/portfolio/studio-portraiture/studio10.jpg",
+      "/images/portfolio/studio-portraiture/studio11.jpg",
+      "/images/portfolio/studio-portraiture/studioCreative1.jpg",
+      "/images/portfolio/studio-portraiture/studioCreative2.jpg",
+      "/images/portfolio/studio-portraiture/studioCreative3.jpg",
+      "/images/portfolio/studio-portraiture/studioCreative4.jpg",
+      "/images/portfolio/studio-portraiture/studioCreative5.jpg",
+      "/images/portfolio/studio-portraiture/studioCreative6.jpg",
+      "/images/portfolio/studio-portraiture/studioCreative7.jpg"
+    ]
+  },
+  {
+    "title": "Floral Portraiture",
+    "tileImage": "../../images/portfolio/floral-portraiture/floral1.JPG",
+    "info": "A focus of cohesion by blending nature with humans as if they are one",
+    "images": [
+      "/images/portfolio/floral-portraiture/floral1.JPG",
+      "/images/portfolio/floral-portraiture/floral2.JPG",
+      "/images/portfolio/floral-portraiture/floral3.JPG",
+      "/images/portfolio/floral-portraiture/floral4.JPG",
+      "/images/portfolio/floral-portraiture/floral5.JPG",
+      "/images/portfolio/floral-portraiture/floral6.JPG",
+      "/images/portfolio/floral-portraiture/floral7.JPG",
+      "/images/portfolio/floral-portraiture/floral8.jpg",
+      "/images/portfolio/floral-portraiture/floral9.jpg"
+    ]
+  },
+  {
+    "title": "Animal Photography",
+    "tileImage": "../../images/portfolio/animal-photography/Animal1.jpg",
+    "info": "Various contexts of freezing time and motion",
+    "images": [
+      "/images/portfolio/animal-photography/Animal1.jpg",
+      "/images/portfolio/animal-photography/Animal2.jpg",
+      "/images/portfolio/animal-photography/Animal3.jpg",
+      "/images/portfolio/animal-photography/Animal4.jpg",
+      "/images/portfolio/animal-photography/Animal5.jpg",
+      "/images/portfolio/animal-photography/Animal6.jpg",
+      "/images/portfolio/animal-photography/Animal7.jpg",
+      "/images/portfolio/animal-photography/Animal8.jpg",
+      "/images/portfolio/animal-photography/Animal9.jpg",
+      "/images/portfolio/animal-photography/Animal10.jpg",
+      "/images/portfolio/animal-photography/Animal11.jpg"
+    ]
+  },
+  {
+    "title": "Self Portraiture",
+    "tileImage": "/images/portfolio/self-portraiture/Final_Print1.jpg",
+    "info": "A personal project of highlighting the contradictory duality of our personalities",
+    "images": [
+      "/images/portfolio/self-portraiture/Final_Print2.jpg",
+      "/images/portfolio/self-portraiture/Final_Print1.jpg",
+      "/images/portfolio/self-portraiture/Final_Print3.jpg",
+      "/images/portfolio/self-portraiture/Final_Print4.jpg",
+      "/images/portfolio/self-portraiture/Final_Print5.jpg",
+      "/images/portfolio/self-portraiture/Final_Print6.jpg",
+      "/images/portfolio/self-portraiture/Final_Print7.jpg",
+      "/images/portfolio/self-portraiture/Final_Print8.jpg",
+      "/images/portfolio/self-portraiture/Final_Print9.jpg",
+      "/images/portfolio/self-portraiture/Final_Print10.jpg"
+    ]
+  }
+]

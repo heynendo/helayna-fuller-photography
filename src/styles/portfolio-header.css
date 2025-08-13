@@ -1,0 +1,73 @@
+.portfolio-header{
+    display: flex;
+    width: 90vw;
+    max-width: 1100px;
+    justify-self: center;
+    justify-content: start;
+    align-items: center;
+    margin: auto;
+}
+.portfolio-header > .titles{
+    margin-left: 5vw;
+    cursor: default;
+}
+.portfolio-header .titles > h1{
+    font-size: 2.5em;
+    font-weight: 700;
+}
+.portfolio-header .titles > h3{
+    font-size: 1em;
+    line-height: 1.25em;
+    font-weight: 400;
+    color: hsl(0, 0%, 85%);
+    padding: 10px 0;
+}
+.back{
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 150px;
+    text-decoration: none;
+    margin: 5vh 0;
+    transition: 0.2s;
+    background: none;
+    cursor: pointer;
+}
+.back > h3{
+    font-family: 'Besley';
+    color: white;
+    text-align: center;
+    width: 100%;
+    transition: 0.2s;
+}
+.back:hover{
+    background: #FFFFFF20;
+}
+.back:hover > h3{
+    font-size: 1.25em;
+}
+
+@media (max-width: 800px){
+    .back{
+        width: 115px;
+    }
+    .back > img{
+        height: 35px;
+        aspect-ratio: 1;
+    }
+    .back > h3{
+        font-size: 1.1em;
+    }
+    .back:hover > h3{
+        font-size: 1.1em;
+    }
+    .portfolio-header .titles > h1{
+        font-size: 1.5em;
+        line-height: 1.2em;
+    }
+    .portfolio-header .titles > h3{
+        font-size: 0.75em;
+    }
+}

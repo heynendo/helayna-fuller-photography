@@ -31,16 +31,28 @@
     width: 100%;
 }
 .about .info > p{
-    padding: 25px;
+    padding: 10px 25px;
     font-style: italic;
     font-weight: 700;
 }
 
-@media (max-width: 700px){
+@media (max-width: 1000px){
     .about{
         display: block;
+        padding: 0 auto;
     }
     .about > img{
-        width: 60%;
+        width: 50%;
+    }
+    .about .info > p{
+        font-size: 0.9em;
+    }
+}
+@media (max-width: 600px){
+    .about > img{
+        width: 55%;
+    }
+    .about .info > p{
+        font-size: 0.75em;
     }
 }

@@ -17,15 +17,28 @@
     cursor: default;
 }
 .portfolio{
-    background-image: url('../../images/temp-background.jpg');
-    background-size: max(100vw, 1500px) auto;
-    background-position: top center;
+    background-color: black;
+    background-image: url('../../images/background-portfolio.png');
+    background-size: cover;/*max(100vw, 1500px) auto;*/
+    background-position: center center;
     background-repeat: no-repeat;
-    background-color: #f7f7f7;
     min-height: 100vh;
     width: 100vw;
     justify-content: center;
     align-content: start;
+}
+@media (min-width: 1600px){
+    .portfolio{
+        animation: bgMove 5s ease-in-out infinite alternate;
+    }
+}
+@keyframes bgMove {
+  from {
+    background-position: center center;
+  }
+  to {
+    background-position: center calc(50% + 10px); /* move slightly down */
+  }
 }
 .portfolio > .cards{
     display: grid;
@@ -74,5 +87,7 @@
     .portfolio .cards .portfolio-card > h3{
         height: 35%;
         font-size: 0.9em;
+    }
+    .portfolio {
     }
 }

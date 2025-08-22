@@ -8,11 +8,17 @@ function About() {
             <img src={helaynaHeadshot} />
             <div className="info">
                 <p>
-                    My name is Helayna Fuller and I am a photographer based out of Grand Rapids, MI. I have been photographing for close to ten years, with a specialty in studio and portrait photography.
+                    Hi, I'm Helayna — a passionate photographer with a love for capturing real, raw, and timeless moments.
                 </p>
                 <p>
-                    In addition to my personal and studio work, I take on freelance projects ranging from headshots and product photos to weddings and events, always aiming to bring each client's vision to life. If you have a photography idea, big or small, let's make it happen!
+                    What started as a hobby quickly turned into a calling. Over the years, my camera has taken me on incredible journeys — from quiet countryside floral fields to bustling urban portraits, from newborn yawns to golden-hour landscapes. No matter the subject, my goal remains the same: to tell your story with honesty, creativity, and heart.
+                </p>
+                <p>
+                    I specialize in freelance studio, graduation, and event portraits, but I'm always open to new challenges and ideas. My style blends natural light, candid emotion, and a touch of fine art to create images that feel both authentic and enduring.
                 </p> 
+                <p>
+                    Based in Grand Rapids, MI, I work with clients locally and beyond. Whether it's your big day or a quiet everyday moment you want to remember forever, I'm here to help you preserve it beautifully.
+                </p>
             </div>
         </div>
     )

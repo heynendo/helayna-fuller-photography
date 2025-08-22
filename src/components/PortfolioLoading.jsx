@@ -8,7 +8,7 @@ function PortfolioLoading(){
                 opacity: [1 , 1 , 1 , 0.5 , 0]
             }}
             transition={{
-                duration: 2.5
+                duration: 2.25
             }}
         >
             Helayna Fuller Photography

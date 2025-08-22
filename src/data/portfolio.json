@@ -2,7 +2,7 @@
   {
     "title": "Family Archive",
     "tileImage": "/images/portfolio/family-archive/FinalPrint1.jpg",
-    "info": "Senior Thesis Project for Grand Valley State University digitally collaged from Adobe Photoshop",
+    "info": "Senior Thesis Project digitally collaged from Adobe Photoshop",
     "images": [
       "/images/portfolio/family-archive/FinalPrint1.jpg",
       "/images/portfolio/family-archive/FinalPrint2.jpg",
@@ -19,7 +19,7 @@
   {
     "title": "Graphic Design Prints",
     "tileImage": "/images/portfolio/graphic-design-prints/Gd_1.jpg",
-    "info": "Digitally manipulated prints of historic photographs, collaged with text and imagery representing the impact of the figure",
+    "info": "Digitally manipulated prints of historic photographs, collaged with text and imagery",
     "images": [
       "/images/portfolio/graphic-design-prints/Gd_1.jpg",
       "/images/portfolio/graphic-design-prints/Gd_2.jpg",
@@ -106,7 +106,7 @@
   {
     "title": "Self Portraiture",
     "tileImage": "/images/portfolio/self-portraiture/Final_Print1.jpg",
-    "info": "A personal project of highlighting the contradictory duality of our personalities",
+    "info": " A personal project of highlighting the contradictory duality of our personalities",
     "images": [
       "/images/portfolio/self-portraiture/Final_Print2.jpg",
       "/images/portfolio/self-portraiture/Final_Print1.jpg",

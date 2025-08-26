@@ -3,11 +3,11 @@ Created by [Donovan Heynen](https://donovanheynen.com/)
 
 React portfolio project for a freelance photographer.
 
-Uses the following tools and languages:
+React frontend using the following tools:
 
 - [React](https://react.dev/)
-- [React Router](https://motion.dev/docs)
-- [Framer Motion](https://reactrouter.com/)
+- [React Router](https://reactrouter.com/)
+- [Framer Motion](https://motion.dev/docs)
 
 ##
 

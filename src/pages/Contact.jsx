@@ -3,84 +3,87 @@ import { motion } from "motion/react"
 import '../styles/contact.css'
 
 function Contact() {
+    const API_URL = import.meta.env.DEV
+        ? "http://localhost:8787/" // local worker
+        : "https://emailserver-resend.heynen-donovan.workers.dev/"
+
     const [userInput, setUserInput] = useState({
         name: "",
         email: "",
-        content: ""
+        message: ""
     })
     const [errors, setErrors] = useState({})
     const [submitted, setSubmitted] = useState(false)
 
-    const updateData = (e) => {
+    function updateData(e) {
         const { name, value } = e.target
-
         setUserInput(prevInput => ({
             ...prevInput,
             [name]: value
         }))
-
+        console.log(userInput)
     }
 
-    const validate = () => {
+    function validate() {
         const newErrors = {}
-        if (userInput.name.trim().length < 2) {
+        if (userInput.name.trim().length < 2)
             newErrors.name = "Name must be at least 2 characters."
-        }
 
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
-        if (!emailRegex.test(userInput.email)) {
+        if (!emailRegex.test(userInput.email))
             newErrors.email = "Please enter a valid email address."
-        }
 
-        if (userInput.content.trim().length < 10) {
-            newErrors.content = "Message must be at least 10 characters."
-        }
+        if (userInput.message.trim().length < 10)
+            newErrors.message = "Message must be at least 10 characters."
 
         return newErrors
     }
 
-    async function handleSumbit(e){
+    async function handleSubmit(e) {
         e.preventDefault()
 
         const validationErrors = validate()
-
         if (Object.keys(validationErrors).length > 0) {
+            console.log(validationErrors)
             setErrors(validationErrors)
             setSubmitted(false)
+            alert("Fix errors before submitting")
             return
-        } else {
-            console.log(userInput)
-            setErrors({})
         }
 
+        setErrors({})
+
         try {
-            const res = await fetch("https://formsubmit.co/fullerhe@mail.gvsu.edu", {
+            const res = await fetch(API_URL, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({
+                    site: "hfphotography",
                     name: userInput.name,
                     email: userInput.email,
-                    message: userInput.content
+                    message: userInput.message
                 })
-            });
+            })
 
             if (res.ok) {
+                alert("Message Sent!")
                 setSubmitted(true)
-                setErrors({})
-                setUserInput({ name: "", email: "", content: "" })
+                setUserInput({ name: "", email: "", message: "" })
             } else {
-                console.error("Form submission failed")
+                alert("Failed to send.")
+                console.error("Form submission failed:", await res.text())
+                setSubmitted(false)
             }
         } catch (err) {
             console.error("Error sending form:", err)
+            setSubmitted(false)
         }
-
     }
 
     return(
         <div className="contact">
             <h2>Schedule Now</h2>
-            <form onSubmit={handleSumbit}>
+            <form onSubmit={handleSubmit}>
                 {errors.name && <motion.div className="error"
                     initial={{ opacity: 0, y: -25, maxHeight: 0 }}
                     animate={{ opacity: 1, y: 0, maxHeight: 25 }}
@@ -103,15 +106,15 @@ function Contact() {
                     value={userInput.email}
                     onChange={updateData}
                 />
-                {errors.content && <motion.div className="error"
+                {errors.message && <motion.div className="error"
                     initial={{ opacity: 0, y: -25, maxHeight: 0 }}
                     animate={{ opacity: 1, y: 0, maxHeight: 25 }}
                     transition={{ duration: 0.5 }}
-                >{errors.content}</motion.div>}
+                >{errors.message}</motion.div>}
                 <textarea 
-                    name="content"
+                    name="message"
                     placeholder="Details"
-                    value={userInput.content}
+                    value={userInput.message}
                     onChange={updateData}
                 />
                 <button type="submit">Send</button>

@@ -76,6 +76,7 @@ function Contact() {
             }
         } catch (err) {
             console.error("Error sending form:", err)
+            alert("Error sending message.")
             setSubmitted(false)
         }
     }
